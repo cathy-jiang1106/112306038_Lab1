@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My information</title>
+</head>
+<body>
+
+
+<table border="1">
+    <thead>
+        <tr>
+          <th colspan="3">About -- 112306038</th>
+        </tr>
+    </thead>
+    <tr>
+        <td rowspan="3" style="width: 20%;">
+            <img src="https://i.pinimg.com/564x/df/ca/0a/dfca0a9749e31d6de0d2583199988f8d.jpg" alt="can't display" style="width: 100%; height: auto;" />
+            <br>personal photo
+        </td>
+
+        <td colspan="2">
+        <p><label>Name:
+            <input name="name" type="text">
+        </label></p>
+            <form>
+                <p><label>Gender:
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female" checked> Female
+                <input type="radio" name="gender" value="other" checked> Other
+                </label></p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td><from action="/action_page.php">
+            <p><label>Country:
+                <select name ="country">
+                    <option value="taipei">Taipei</option>
+                    <option value="tainan">Tainan</option>
+                    <option value="taichung">Taichung</option>
+                    <option value="taoyuan">Taoyuan</option>
+                </select>
+            </label></p>
+        </from></td>
+        <td><from action="/action_page.php">
+            <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" >
+        </from></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p><label>E-mail:
+                <input type="email" id="email" name="email" required>
+            </label></p>
+        </td>
+    </tr>
+    <tr>
+        <td>Hobby</td>
+        <td colspan="2"><from action="/action_page.php">
+            <input type="checkbox" name="hobby" value="swimming">Swimming
+            <input type="checkbox" name="hobby" value="volleyball">Volleyball
+            <input type="checkbox" name="hobby" value="movie">Movie
+            <input type="checkbox" name="hobby" value="game">Game
+            <input type="checkbox" name="hobby" value="sleep">sleep
+        </from></td>
+    </tr>
+    <tr>
+        <td>Skill</td>
+        <td colspan="2"><from action="/action_page.php">
+            <input type="checkbox" name="skill" value="java">Java
+            <input type="checkbox" name="skill" value="html">HTML
+            <input type="checkbox" name="skill" value="python">Python
+            <input type="checkbox" name="skill" value="microsoft office">Microsoft Office
+            <input type="checkbox" name="skill" value="premiere">Premiere
+        </from></td>
+    </tr>
+    <tr>
+        <td>Say Something</td>
+        <td colspan="2">
+            <form>
+                <label for="myTextarea"></label>
+                <textarea id="myTextarea" name="comments" placeholder="Say something here."></textarea>
+              </form>
+        </td>
+    </tr>
+    <tr>
+        <td  colspan="3"><form method="post" action="http://www.deitel.com">
+            <input type="submit" value="提交">
+            <input type="reset" value="重設">
+        </form></td>
+    </tr>
+    
+</table>
+
+
+</body>
+</html>
+
